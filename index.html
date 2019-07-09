@@ -128,7 +128,7 @@
             <form class="randomizer form-inline lato" role="form">
               <div class="form-group-lg">
                 <label for="randSets" class="col-xs-12 col-md-7 control-label">
-                How many sets of numbers do you want to generate?</label>
+                How many sets of questions do you want to generate?</label>
                 <div class="col-xs-12 col-md-5">
                   <input type="tel" class="form-control" id="randSets" name="sets" placeholder="Number of sets">
                   	<details class="help-block">
@@ -140,7 +140,7 @@
 
               <div class="form-group-lg">
                 <label for="randNums" class="col-xs-12 col-md-7 control-label">
-                How many numbers per set?</label>
+                How many questions per set?</label>
                 <div class="col-xs-12 col-md-5">
                   <input type="tel" class="form-control" id="randNums" name="nums" placeholder="Numbers per set">
                   	<details class="help-block">
@@ -200,7 +200,7 @@
                   </select>
                   	<details class="help-block">
 						<summary>Help</summary>
-					 	<p>Sorting your numbers can be helpful if you are performing random sampling, but it is not desirable if you are performing random assignment.</p>
+					 	<p>Sorting your numbers can be helpful.</p>
 					</details><br class="hidden-xs hidden-sm">
                 </div>
               </div>
@@ -300,7 +300,7 @@ This layout allows you to know that 23 is the third number in the sequence, and 
 	 var oldIE;
 	 var worker;
 	 var excelDownload = new Array();
-	 var csvContent = "data:text/pdf;charset=utf-8,";
+	 var csvContent = "data:text/csv;charset=utf-8,";
 	 var dataString;
 	 var i = 0;
 	 var html = [], k= 0;;
@@ -500,14 +500,13 @@ This layout allows you to know that 23 is the third number in the sequence, and 
 
 
 			var setCountText;
-      // If number is greater than a billion perform a floor-based calculation
-			if (setCount > 999999999) {
+     		if (setCount > 999999999) {
         setCount = Math.floor(parseFloat(setCount / 100000000).toFixed(1))/10;
 				setCountText = setCount + " billion";
 			} else {
 				setCountText = parseFloat(setCount / 1000000).toFixed(0) + " million";
 			}
-			$('#stats-text').html("Since 2007, the site has generated more than <strong>" + setCountText + " </strong> random numbers. <br class=\"visible-sm visible-lg\">To get started, simply use the form below.");
+			$('#stats-text').html("Generate <strong>" + setCountText + " </strong> random numbers. <br class=\"visible-sm visible-lg\">To get started, simply use the form below.");
 		});
  	  
 	});
