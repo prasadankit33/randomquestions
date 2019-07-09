@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <htmllang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class=""> <!--<![endif]-->
+
+
+<!-- Mirrored from www.randomizer.org/tutorial/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Jul 2019 17:08:03 GMT -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Research Randomizer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link href="../css/landing-page.css" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link href="../css/randomizer.css" rel="stylesheet">
+
+    <!-- Fix Details Tag in Firefox and IE -->
+    <link rel="stylesheet" type="text/css" href="../css/details-shim.min.css">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.2.0/css/font-awesome.min.html" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script src="../js/randomizer.js"></script>
+	<script>
+		currentSection = 0
+    function loadIndex (){
+      var isHome = document.getElementById("randomize");
+      if (isHome) {
+        document.getElementById("homeLink").href="#randomize";
+      }
+      else {
+        document.getElementById("homeLink").href="../index.html";
+      }
+    }
+	</script>
+</head>
+
+<body>
+    <a href="#maincontent" class="sr-only" title="Skip to main content">Skip to main content</a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html"><img src="../img/header-icon.svg" height="40px" alt="Pair of dice"></a><a href="../index.html" style="text-decoration: none"><h6 class="header-logo">RESEARCH<br>RANDOMIZER</h6></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                     <li>
+                        <a href="../index.html" title="Homepage" id="homeLink" onclick="loadIndex()">RANDOMIZE</a>
+                    </li>
+                    <li>
+                        <a href="index.html" title="Link to Tutorial page">TUTORIAL</a>
+                    </li>
+                    <li>
+                        <a href="../links/index.html" title="Link to links page">LINKS</a>
+                    </li>
+                    <li>
+                        <a href="../about/index.html" title="Link to About page ">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <noscript>
+      <div class="alert alert-danger alert-dismissible fade in jsalert show">
+        <p>We're sorry, but some features of Research Randomizer require JavaScript. If you cannot enable JavaScript, we suggest you use an alternative random number generator such as the one available at <a href="http://random.org/" title="Random.org">Random.org</a>.</p>
+      </div>
+    </noscript>
+
+
+    <!-- Header -->
+    <div class="intro-header bg-tutorial" id="maincontent">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message"><br>
+                        <h1 class="red">TUTORIAL</h1>
+                        <br>
+						<br>
+                        <p class="lead white">This 10-minute tutorial describes four examples of how a Randomizer form can be used to carry out common research tasks such as drawing a random sample of individuals from a population.<br><br>
+                        To begin, simply scroll down to Lesson 1 below.
+                        <br><br></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+		<!-- Arrow Box -->
+      <div class="arrow-box">
+		 <a name="1"></a>
+        <img src="../img/arrow-top.svg" alt="top of arrow graphic">>
+        </div>
+
+    </div>
+    <!-- /.intro-header -->
+
+
+
+<!-- Page Content -->
+<div class="content-section-a">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="clearfix"></div>
+        <h2 class="section-heading white xl text-center hidden-xs hidden-sm">LESSON 1 OF 4</h2>
+        <h2 class="section-heading white text-center visible-xs visible-sm">LESSON 1 OF 4</h2>
+        <h3 class="dkred text-center">Random Sample of 50 Students from a Population of 643</h3><br>
+        <p class="lead white text-center" style="padding-bottom: 20px">Survey researchers often use random sampling to measure public opinion because it's much cheaper to survey a representative sample of the public than to survey everyone. With the form below, it's easy to generate a random sample.<br><br>
+Let's say you're interested in studying student attitudes toward climate change. If you wanted to randomly sample 50 students out of 643 at a local school, you would need to number all 643 students (Student 001, 002, 003, etc.) and then use the Randomizer form to generate 1 set of 50 unique numbers with a range from 1 to 643.<br><br>
+These settings have been chosen in the Randomizer form below. Click the "Randomize Now!" button to get your results.<br>
+		 <hr>
+      </div>
+    </div>
+            <form class="form-inline lato" role="form">
+              <div class="form-group-lg">
+                <label for="NumberOfSets" class="col-xs-12 col-md-7 control-label">
+                How many sets of numbers do you want to generate?</label>
+                <div class="col-sm-12 col-md-5">
+                  <input type="text" class="form-control" id="NumberofSets" placeholder="Number of sets" value="1">
+                  	<details class="help-block">
+						<summary>Help</summary>
+					 	<p>In some cases, you may wish to generate more than one set of numbers at a time (e.g., when randomly assigning people to experimental conditions in a "blocked" research design). If you wish to generate multiple sets of random numbers, simply enter the number of sets you want, and Research Randomizer will display all sets in the results.</p>
+					</details><br class="hidden-xs hidden-sm">
+                </div>
+              </div>
+
+              <div class="form-group-lg">
+                <label for="NumbersPerSet" class="col-xs-12 col-md-7 control-label">
+                How many numbers per set?</label>
+                <div class="col-sm-12 col-md-5">
+                  <input type="text" class="form-control" id="NumbersPerSet" placeholder="Numbers per set" value="50">
+                  	<details class="help-block">
+						<summary>Help</summary>
+					 	<p>Specify how many numbers you want Research Randomizer to generate in each set. For example, a request for 5 numbers might yield the following set of random numbers: 2, 17, 23, 42, 50.</p>
+					</details><br class="hidden-xs hidden-sm">
+                </div>
+              </div>
+
+              <div class="form-group-lg">
+                <label for="NumberRange" class="col-xs-12 col-md-7 control-label">
+                Number range (e.g., 1-50)</label>
+                <div class="col-xs-6 col-md-5">
+                  <input type="text" class="form-control" id="NumbersFrom" placeholder="From" value="1">
+                </div>
+                <div class="col-col-md-12 hidden-xs hidden-sm">&nbsp;</div>
+                <div class="col-xs-0 col-md-7 hidden-xs hidden-sm">&nbsp;</div>
+                <div class="col-xs-6 col-md-5">
+                  <input type="text" class="form-control" id="NumbersTo" placeholder="To" value="643">
+                </div>
+                <div class="col-xs-0 col-md-7 hidden-xs hidden-sm">&nbsp;</div>
+                <div class="col-xs-12 col-md-5">
+                  	<details class="help-block">
+						<summary>Help</summary>
+					 	<p>Specify the lowest and highest value of the numbers you want to generate. For example, a range of 1 up to 50 would only generate random numbers between 1 and 50 (e.g., 2, 17, 23, 42, 50). Enter the lowest number you want in the "From" field and the highest number you want in the "To" field.</p>
+					</details><br class="hidden-xs hidden-sm">
+                </div>
+              </div>
+
+
+
+
+              <div class="form-group-lg">
+                <label for="UniquePerset" class="col-xs-12 col-md-7 control-label">
+                Do you wish each number in a set to remain unique?</label>
+                <div class="col-xs-12 col-md-5">
+                   <select class="form-control">
+                       <option>Yes</option>
+                       <option>No</option>
+                  </select>
+                  	<details class="help-block">
+						<summary>Help</summary>
+					 	<p>Selecting "Yes" means that any particular number will appear only once in a given set (e.g., 2, 17, 23, 42, 50). Selecting "No" means that numbers may repeat within a given set (e.g., 2, 17, 17, 42, 50).<br>
+Please note: Numbers will remain unique only within a single set, not across multiple sets. If you request multiple sets, any particular number in Set 1 may still show up again in Set 2.</p>
+					</details><br class="hidden-xs hidden-sm">
+                </div>
+              </div>
+
+
+              <div class="form-group-lg">
+                <label for="SortedNumbers" class="col-xs-12 col-md-7 control-label">
+                Do you wish to sort the numbers that are generated?</label>
+                <div class="col-xs-12 col-md-5">
+                   <select class="form-control">
+                          <option>Yes, least to greatest</option>
+                          <option>No</option>
+                          <option>Yes, greatest to least</option>
+                  </select>
+                  	<details class="help-block">
+						<summary>Help</summary>
+					 	<p>Sorting your numbers can be helpful if you are performing random sampling, but it is not desirable if you are performing random assignment. To learn more about the difference between random sampling and random assignment, please see the Research Randomizer Quick Tutorial.</p>
+					</details><br class="hidden-xs hidden-sm">
+                </div>
+              </div>
+
+
+              <div class="form-group-lg">
+                <label for="Placemarkers" class="col-xs-12 col-md-7 control-label">
+                How do you wish to view your random numbers?</label>
+                <div class="col-xs-12 col-md-5">
+                   <select class="form-control">
+                          <option>Place Markers Off</option>
+                          <option>Place Markers Within</option>
+                          <option>Place Markers Across</option>
+                  </select>
+                  	<details class="help-block">
+						<summary>Help</summary>
+ 						 	<p>Place Markers let you know where in the sequence a particular random number falls (by marking it with a small number immediately to the left).<br>
+Examples:<br><br>
+
+With Place Markers Off, your results will look something like this:<br>
+Set #1: 2, 17, 23, 42, 50<br>
+Set #2: 5, 3, 42, 18, 20<br>
+
+This is the default layout Research Randomizer uses.<br><br>
+
+With Place Markers Within, your results will look something like this:<br>
+Set #1: p1=2, p2=17, p3=23, p4=42, p5=50<br>
+Set #2: p1=5, p2=3, p3=42, p4=18, p5=20<br>
+
+This layout allows you to know instantly that the number 23 is the third number in Set #1, whereas the number 18 is the fourth number in Set #2.
+Notice that with this option, the Place Markers begin again at p1 in each set.<br><br>
+
+With Place Markers Across, your results will look something like this:<br>
+Set #1: p1=2, p2=17, p3=23, p4=42, p5=50<br>
+Set #2: p6=5, p7=3, p8=42, p9=18, p10=20<br>
+
+This layout allows you to know that 23 is the third number in the sequence, and 18 is the ninth number over both sets. As discussed in the Quick Tutorial, this option is especially helpful for doing random assignment by blocks.</p>
+					</details><br class="hidden-xs hidden-sm">
+                </div>
+              </div>
+
+
+              <div class="col-xs-12 text-center">
+              <br><br>
+                <a href="#" data-toggle="modal" data-target="#resultsModal"">
+                <button type="submit" class="btn btn-default randomize">RANDOMIZE NOW!</button>
+                </a>
+			  </div>
+            </form>
+
+            <div class="modal fade" id="resultsModal" tabindex="-1" role="dialog" aria-labelledby="resultsModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" id="printThis">
+								            <button type="button" class="btn btn-default" data-dismiss="modal">CLOSE</button>
+                            <h3 class="modal-title red" id="myModalLabel">RESULTS</h3>
+                        </div>
+                        <div class="modal-body" id="printThisToo">
+                            <p class="">
+                            <span class="red darker">1</span> Set of <span class="red darker">50 Unique</span> Numbers Per Set<br>
+							                Range: From <span class="red darker">1</span> to <span class="red darker">643</span> &mdash;  <span class="red darker">Sorted from Least to Greatest</span><br><br>
+                            <strong>Set #1:</strong><br>
+                            8, 24, 25, 29, 36, 56, 67, 114, 115, 151, 156, 164, 182, 202, 213, 214, 221, 227, 241, 245, 259, 266, 272, 273, 274, 277, 281, 284, 290, 295, 298, 322, 367, 375, 386, 391, 410, 412, 461, 466, 473, 487, 490, 505, 539, 541, 552, 553, 567, 569</p>
+                            <hr>
+                            <p class="lato">You now have a list of all the students selected to participate in your study (Student #8, Student #24, Student #25, and so on). Once your random numbers have been generated, you can print them by clicking the Print button below, view or download them in an Excel spreadsheet, or copy and paste them from this window into another software program.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <p class="lato"><em><strong>Note:</strong> For demonstration purposes, the numbers listed above are not actually randomly generated and will be the same every time you run this tutorial.</em></p>
+                    	  </div>
+                    </div>
+                </div>
+            </div>
+
+      <div class="col-xs-12 text-center lessons">
+      <br><br><hr>
+      <a href="lesson2.html#2"><img src="../img/RightDie-Filled.svg" class="tutorial-right-dice hidden-xs" height="24px"><span class="hidden-xs">Continue to </span>Lesson 2 →<i class="fa fa-arrow-circle-right"></i></a>
+      </div>
+      <br><br>
+
+      </div>
+      <!-- /.container -->
+
+   	</div>
+
+    <!-- Footer -->
+<footer>
+    <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="col-lg-12">
+              <p class="white">Copyright &copy; 1997-<script>document.write(new Date().getFullYear());</script> by Geoffrey C. Urbaniak and Scott Plous &nbsp; | &nbsp; <a href="http://www.socialpsychology.org/usage.htm" target="_blank"  class="darklink">Site Statistics</a></p>
+              <div class="ad-container" style="padding-top: 30px;">
+                <!-- Randomizer -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-5034908004749154"
+                     data-ad-slot="4416641215"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                  [].forEach.call(document.querySelectorAll('.adsbygoogle'), function(){
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                  });
+                </script>
+                <script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+                <script> (adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-5034908004749154", enable_page_level_ads: true }); </script>
+              </div>
+
+            </div>
+            <p class="white">&nbsp;</p>
+          </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- PrintModal JavaScript -->
+    <script src="../js/printmodal.js"></script>
+
+    <!-- Fix Details tag in Firefox and IE -->
+    <script type="text/javascript" src="js/details-shim.min.html"></script>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-9046968-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</body>
+
+
+<!-- Mirrored from www.randomizer.org/tutorial/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Jul 2019 17:08:06 GMT -->
+</html>
