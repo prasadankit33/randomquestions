@@ -6,7 +6,6 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class=""> <!--<![endif]-->
 
 
-<!-- Mirrored from www.randomizer.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Jul 2019 17:07:34 GMT -->
 <head>
 
     <meta charset="utf-8">
@@ -88,8 +87,6 @@
                     	<img src="img/LegacyDice.svg" width="160px" class="intro-img" alt="Image of dice"><br class="hidden-xs"/><br class="hidden-xs"/>
 						          <h1 class="red hidden-xs">RANDOM QUESTION GENERATOR</h1>
                         <h2 class="red visible-xs">RANDOM QUESTION GENERATOR</h2>
-                        <h3 class="white hidden-xs">RANDOM SAMPLING AND <br class="visible-sm">RANDOM ASSIGNMENT MADE EASY!<br><br></h3>
-                        <h4 class="white visible-xs">RANDOM SAMPLING AND <br>RANDOM ASSIGNMENT MADE EASY!<br><br></h4>
                        
 <span id="stats-text"></span><br>
 <br>
@@ -203,7 +200,7 @@
                   </select>
                   	<details class="help-block">
 						<summary>Help</summary>
-					 	<p>Sorting your numbers can be helpful if you are performing random sampling, but it is not desirable if you are performing random assignment. To learn more about the difference between random sampling and random assignment, please see the Research Randomizer Quick Tutorial.</p>
+					 	<p>Sorting your numbers can be helpful if you are performing random sampling, but it is not desirable if you are performing random assignment.</p>
 					</details><br class="hidden-xs hidden-sm">
                 </div>
               </div>
@@ -227,7 +224,7 @@ With Place Markers Off, your results will look something like this:<br>
 <strong>Set #1: 2, 17, 23, 42, 50</strong><br>
 <strong>Set #2: 5, 3, 42, 18, 20</strong><br>
 
-This is the default layout Research Randomizer uses.<br><br>
+This is the default layout.<br><br>
 
 With Place Markers Within, your results will look something like this:<br>
 <strong>Set #1: p1=2, p2=17, p3=23, p4=42, p5=50</strong><br>
@@ -282,10 +279,7 @@ This layout allows you to know that 23 is the third number in the sequence, and 
 							   </div>
 							   <div class="modal-body" id="completedRandomizer" style="height: 0px; padding:0; margin: 0;">
 							   </div>
-							   <div class="modal-footer">
-								   <p class="hidden-xs">Please note:<span class="lato"> By using this service, you agree to abide by the <a href="http://www.socialpsychology.org/usage.htm" class="lightlink" target="_blank">SPN User Policy</a> and to hold Research Randomizer and its staff harmless in the event that you experience a problem with the program or its results. Although every effort has been made to develop a useful means of generating random numbers, Research Randomizer and its staff do not guarantee the quality or randomness of numbers generated. Any use to which these numbers are put remains the sole responsibility of the user who generated them.</span></p>
-								   <p class="visible-xs">Note: <span class="lato">By using Research Randomizer, you agree to its <a href="terms/index.html" target="_blank" class="lightlink">Terms of Service</a>.</p>
-							   </div>
+							   
 						   </div>
 					   </div>
 				   </div>
@@ -472,7 +466,7 @@ This layout allows you to know that 23 is the third number in the sequence, and 
 		var encodedUri = encodeURI(csvContent);
 		var link = document.createElement("a");
 		link.setAttribute("href", encodedUri);
-		link.setAttribute("download", "Randomizer.csv");
+		link.setAttribute("download", "randomassignments.csv");
 		document.body.appendChild(link);
 
 		link.click(); // This will download the data file named "my_data.csv".
@@ -515,18 +509,7 @@ This layout allows you to know that 23 is the third number in the sequence, and 
 			}
 			$('#stats-text').html("Since 2007, the site has generated more than <strong>" + setCountText + " </strong> random numbers. <br class=\"visible-sm visible-lg\">To get started, simply use the form below.");
 		});
- 	   /*
-		$('#stats-text').click(function() {
-			if (defaultText == "randomizes") {
-				defaultText = "sets";
-				$('#stats-text').html("Since its release, the site has been used to generate number sets over <strong>31.8 million</strong> times.<br class=\"visible-sm visible-lg\">To get started, simply use the form below.");
-			} else {
-				$('#stats-text').html("Since 2007, the site has generated <strong>867 million</strong> sets of random numbers. <br class=\"visible-sm visible-lg\">To get started, simply use the form below.");
-				defaultText = "randomizes";
-				//For billion, use one decimal place
-			}
-		});
-		*/
+ 	  
 	});
 	</script>
 
